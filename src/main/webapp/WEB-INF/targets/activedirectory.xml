@@ -16,7 +16,7 @@
 
 
         </params>
-        <targetAttribute name="samAccountName" sourceType="user" source="samAccountName"  />
+        <targetAttribute name="samAccountName" sourceType="user" source="uid"  />
         <targetAttribute name="sn" sourceType="user" source="sn"  />
         <targetAttribute name="givenName" sourceType="user" source="givenName"  />
         <targetAttribute name="cn" sourceType="user" source="cn"  />

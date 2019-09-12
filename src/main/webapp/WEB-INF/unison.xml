@@ -65,6 +65,15 @@
                     <rule scope="group" constraint="CN=OpenUnisonAdmins,CN=Users,ou=activedirectory,o=Tremolo"/>
                 </azRules>
             </orgs>
+
+            <orgs name="Applications" description="Applications" uuid="2fdf41ba-1baf-43c5-8612-032f78658fd8" showInPortal="false" showInRequestsAccess="true" showInReports="false">
+
+              
+
+                <azRules>
+                    <rule scope="dn" constraint="o=Tremolo"/>
+                </azRules>
+            </orgs>
             
             <orgs name="System workflows" description="System workflows" uuid="63ada052-881e-4685-834d-dd48a3aa4bb4" showInPortal="false" showInRequestsAccess="false" showInReports="false">
                 <azRules>
