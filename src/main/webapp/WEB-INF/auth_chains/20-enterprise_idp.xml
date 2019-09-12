@@ -1,0 +1,9 @@
+<chain name="enterprise_idp" level="20" root="o=Tremolo">
+    <authMech>
+        <name>loginForm</name>
+        <required>required</required>
+        <params>
+          <param name="FORMLOGIN_JSP" value="/auth/forms/defaultForm.jsp"/>
+        </params>
+     </authMech>
+</chain>

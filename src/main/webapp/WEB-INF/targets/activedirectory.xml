@@ -1,0 +1,24 @@
+<target name="activedirectory" className="com.tremolosecurity.provisioning.core.providers.ADProvider">
+        <params>
+                <param name="host" value="#[AD_HOST]"/>
+                <param name="port" value="#[AD_PORT]"/>
+                <param name="adminDN" value="#[AD_BIND_DN]"/>
+                <param name="adminPasswd" value="#[AD_BIND_PASSWORD]"/> 
+                <param name="dnPattern" value="cn=${cn},cn=Users,#[AD_BASE_DN]"/>
+                <param name="searchBase" value="#[AD_BASE_DN]"/>
+                <param name="userIDAttribute" value="samAccountName"/>
+                <param name="useSSL" value="true"/>
+                <param name="maxCons" value="10"/>
+                <param name="threadsPerCons" value="10"/>
+                <param name="createShadowAccount" value="false"/>
+                <param name="idleTimeout" value="90000" />
+                <param name="allowExternalUsers" value="false" />
+
+
+        </params>
+        <targetAttribute name="samAccountName" sourceType="user" source="samAccountName"  />
+        <targetAttribute name="sn" sourceType="user" source="sn"  />
+        <targetAttribute name="givenName" sourceType="user" source="givenName"  />
+        <targetAttribute name="cn" sourceType="user" source="cn"  />
+        <targetAttribute name="mail" sourceType="user" source="mail"  />
+</target>
